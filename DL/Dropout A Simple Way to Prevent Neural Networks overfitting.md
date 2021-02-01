@@ -36,7 +36,7 @@
 
 ---
 
-$r_j^{(l)} \sim Bernoulli(p),\quad \widetilde{y}^{(l)}=r^{(l)}*y^{(l)} \newline \newline z_i^{(l+1)}=w_i^{(l+1)}\widetilde{y}^l+b_i^{(l+1)}, \quad y_i^{(l+1)}= f(z_i^{(l+1)})$
+$r_j^{(l)} \sim Bernoulli(p),\quad \widetilde{y}^{(l)}=r^{(l)}*y^{(l)} \\ \\ z_i^{(l+1)}=w_i^{(l+1)}\widetilde{y}^l+b_i^{(l+1)}, \quad y_i^{(l+1)}= f(z_i^{(l+1)})$
 
 ## Learning Dropout Nets - Training
 
