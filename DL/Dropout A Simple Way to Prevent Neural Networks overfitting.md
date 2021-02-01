@@ -1,9 +1,9 @@
 # Dropout : A Simple Way to Prevent Neural Networks from Overfitting
 
-Link: https://jmlr.org/papers/v15/srivastava14a.html
-Tags: dropout, overfitting
-Thesis: Dropout brings good generalization accuracy by ensembling random neuron combinations.
-리뷰여부: Yes
+- Link: https://jmlr.org/papers/v15/srivastava14a.html
+- Tags: dropout, overfitting
+- Thesis: Dropout brings good generalization accuracy by ensembling random neuron combinations.
+
 ### Author : Kyungmin Lee
 
 - Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014). Dropout: a simple way to prevent neural networks from overfitting. The journal of machine learning research, 15(1), 1929-1958.
