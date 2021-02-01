@@ -1,4 +1,4 @@
-<img src="https://latex.codecogs.com/png.latex?s=\text { sensor reading }  " /> 
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 
 # Dropout : A Simple Way to Prevent Neural Networks from Overfitting
 
