@@ -1,6 +1,4 @@
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<img src="https://latex.codecogs.com/gif.latex?s=\text { sensor reading }  " /> 
 
 # Dropout : A Simple Way to Prevent Neural Networks from Overfitting
 
