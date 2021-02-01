@@ -1,4 +1,4 @@
-<img src="https://latex.codecogs.com/gif.latex?s=\text { sensor reading }  " /> 
+<img src="https://latex.codecogs.com/png.latex?s=\text { sensor reading }  " /> 
 
 # Dropout : A Simple Way to Prevent Neural Networks from Overfitting
 
