@@ -24,7 +24,7 @@ Sparse matrix를 보고 가야한다.
 - 대표적인 Sparse network는 바로 Convolutional neural network이다. 
 그 이유는 바로 Convolutional 연산에 의해 생기는 matrix의 형태가 바로 Sparse 한 형태이기 때문이다.
 <center>
-<img width="40%" height="30%" src="./MeanOfSparse_img_folder/convolution_func"></img>
+<img width="40%" height="30%" src="./MeanOfSparse_img_folder/convolution_func.png"></img>
 </center>
 
 - 합성곱이라는 의미 답게 두개의 함수가 합성함수처럼 겹쳐진 함수인데, 통계적인 의미로는 f,g의 distribution에서 겹치는 영역의 넓이를 알고
