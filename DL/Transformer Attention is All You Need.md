@@ -42,7 +42,7 @@
 - Here, the encoder maps an input sequence of symbol representations $(x_1,...x_n)$ to a sequence of continuous representations $z=(z_1,...,z_n)$. Given z, the decoder then generates an output sequence $(y_1, ..., y_m)$ of symbols one element at a time.
 - The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder.
 
-![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled.png](/img/210202_1.png)
+![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled.png](/img/attention/210202_1.png)
 
 Figure 1
 
