@@ -42,7 +42,7 @@
 - Here, the encoder maps an input sequence of symbol representations $(x_1,...x_n)$ to a sequence of continuous representations $z=(z_1,...,z_n)$. Given z, the decoder then generates an output sequence $(y_1, ..., y_m)$ of symbols one element at a time.
 - The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder.
 
-![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled.png](Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled.png)
+![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled.png](/img/210202_1.png)
 
 Figure 1
 
@@ -70,7 +70,7 @@ Figure 1
 
 - An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors.
 
-![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%201.png](Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%201.png)
+![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%201.png](/img/210202_2.png)
 
 Figure 2
 
@@ -152,7 +152,7 @@ $PE_{(pos, 2i)}=sin(pos/10000^{2i/d_{model}}),\quad PE_{(pos, 2i+1)}=cos(pos/100
     - the length of the paths forward and backward signals have to traverse in the network is important . **The shorter these paths between any combination of positions in the input and output sequences, the easier it is to learn long-range dependencies**
     - compare the maximum path length between any two input and output positions in networks composed of the different layer types.
 
-    ![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%202.png](Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%202.png)
+    ![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%202.png](/img/210202_3.png)
 
     Table 1
 
@@ -193,13 +193,13 @@ $learning \ rate=d_{model}^{-0.5}\cdot min(step\_num^{-0.5}, step\_num\cdot warm
 
 ### 6.1 Machine Translation
 
-![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%203.png](Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%203.png)
+![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%203.png](/img/210202_4.png)
 
 Table 2
 
 ### 6.2 Model Variations
 
-![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%204.png](Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%204.png)
+![Transformer%20Attention%20is%20All%20You%20Need%207b1871cd75d74bdcb79583e173de4bdd/Untitled%204.png](/img/210202_5.png)
 
 - (A) : While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.
 - (B) : reducing the attention key size $d_k$ hurts model quality.
