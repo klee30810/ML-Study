@@ -46,7 +46,7 @@ Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부�
 - 당연히 필터도 다차원의 필터를 적용하는 것이 가능하고, 이경우 다음 그림과 같은 형태로 연산이 이루어진다.
 
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/3d_filter_in_CNN.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/3d_filter_in_CNN.png"></img>
 </center>
  
 ---------------------------------------  
@@ -57,7 +57,7 @@ Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부�
 작업이 갖는 것을 볼 것인데, 도대체 이게 무슨 의미를 가지는 지에 볼것이다.
 그전에 입력 레이어가 멀티채널을 가지고 있으면 다음 그림처럼 1x1에서 다음 그림처럼 depth에 해당하는 채널만 맞춰주는 것이 되는 것이다.
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/1x1Filter.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/1x1Filter.png"></img>
 </center>
 
 
@@ -81,14 +81,14 @@ Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부�
 전통적인 방법으론 interpolation 스키마를 적용시킨다던가 어떤 creating 법칙을 정해서 그 법칙을 따라서 값을 확장해 나가는 식(호프만 코드 같은 방법인듯)으로 복원했었는데, 뉴럴넷 자체로 적절한 변환방법을 익히게하여
   복원시키는것이 트랜드라고 한다. 이를 transpose Convolution이고 deconvolution이라고 알려져 있다. 참고 신호처리에서 deconvolution은 이 방식에 해당되지 않음을 알고가자. 대표적인 deconvolution의 동작 방식은 다음그림과 같다.
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/deconv1.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/deconv1.png"></img>
 </center>
 
 - 2x2의 임베딩된 피쳐로부터 3x3의 필터를 씌우는 연산을 반복하여 4x4로 확장하는 것인데, 이를 upsampling한다고 한다. 나머지 외벽에 있는 값들은 따로 안정해주면 다 0으로 가정한다.
 그런데 여기서 여러가지 시도들이 등장하는데 단순한 2x2의 임베딩된 입력 값인데 이 입력값들 사이에 1의 제로 패딩을 추가하면 다음과 같이 되고 크기의 결과는 5x5로 변하게 된다.
 
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/1padinput_deconvolution.png"></img>
+<img width="50%" height="50%" src=".MeanOfSparse_img_folder/1padinput_deconvolution.png"></img>
 </center>
 
 자 그러면 다시 입력 이미지로부터, 첫 질문에 대한 답인 왜 Sparse한지에 대한 결론을 내릴 때가 왔다.
@@ -100,7 +100,7 @@ Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부�
 수학적인 matrix multiplication인 관점으로 펼쳐서 보면 다음과 같이 된다.
   
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/CNNsparse_matrix.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/CNNsparse_matrix.png"></img>
 </center>
 
 - 그림에서 보면 중간중간에 0이 들어간 것이 있는데, 이는 하나의 필터 연산에 대응되지 않는 이미지에 대한 표시이다. 이러한 성질 때문에 이는
@@ -109,7 +109,7 @@ Sparse matrix가 되고 Sparse하다고 표현하는 것이다. 그렇다면! de
   될거 같지 않은가??
 
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/deconv_sparse.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/deconv_sparse.png"></img>
 </center>
 
 - 예상한대로의 구조를 지닌다. 
@@ -118,19 +118,19 @@ Sparse matrix가 되고 Sparse하다고 표현하는 것이다. 그렇다면! de
 ###**(8) Dilated Convolution (Atrous Convolution)** 
 - Dilated의 직역은 '확장한다 이다.'Dilated convolution'도 역시 많은 논문에서 등장한다. 우선 일반적인 convolution과 Dilated convolution 수식부터 비교를 해보자 다음이 일반적인 discrete한 convolution의 연산에 대한 수식이다.
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/deconv_sparse.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/deconv_sparse.png"></img>
 </center>
 
 - 다음은 Dilated convolution의 대한 수식이다.
 
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/Dilatedconvolution_func.png">
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/Dilatedconvolution_func.png">
 </center>
 
 - 여기에 l이 추가된 것이 볼수 있는데, 이 의미 바로 필터간의 확장계이라 볼수 있다. 무슨 말인고 하니 이게 1이면 일반적인 convoution의 필터와 같아진다. 다음 그림을 보면
 쉽게 이해할 수 있을 것이다!
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/Dilatedconvolution_figs.png">
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/Dilatedconvolution_figs.png">
 </center>
 
 - 필터간의 칸을 l-1의 크기만큼 띄우는 역할을 한다. 이 Dilated convolution의 이점은 필터 크기의 증가 없이 싼 코스트에 광범위하 receptive filed를 확장할 수 있다는 것이다.(receptive filed가 뭔지 모르겠다면 <a href="#rf">여기</a> 참조)
@@ -143,7 +143,7 @@ Sparse matrix가 되고 Sparse하다고 표현하는 것이다. 그렇다면! de
 - receptive field 는 출력 레이어의 뉴런 하나에 영향을 미치는 입력 뉴런들의 공간 크기이다.
 
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/recep_field.png">
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/recep_field.png">
 </center>
 
 - 위그림과 같이 입력이 32x32x3 (RGB image) 인 경우 가중치(필터)의 크기가 [5x5x3] 이라면
