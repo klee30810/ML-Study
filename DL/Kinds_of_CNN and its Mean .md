@@ -24,7 +24,7 @@ Sparse matrix를 보고 가야한다.
 - 대표적인 Sparse network는 바로 Convolutional neural network이다. 
 그 이유는 바로 Convolutional 연산에 의해 생기는 matrix의 형태가 바로 Sparse 한 형태이기 때문이다.
 <center>
-<img width="40%" height="30%" src="/MeanOfSparse_img_folder/convolution_func"></img>
+<img width="40%" height="30%" src="./MeanOfSparse_img_folder/convolution_func"></img>
 </center>
 
 - 합성곱이라는 의미 답게 두개의 함수가 합성함수처럼 겹쳐진 함수인데, 통계적인 의미로는 f,g의 distribution에서 겹치는 영역의 넓이를 알고
@@ -32,13 +32,13 @@ Sparse matrix를 보고 가야한다.
 0이 되버리기 때문에, 겹치는 부분만 살아남게 되는 것이다. 그러나 여기서 주의점이 있다. Convolution 연산은 적분으로 CDF를 구하기 전에, 한 함수를 shift하거나 revserse 한 후에 적용한 것이다.
 단순히 두 함수 혹은 두 분포의 겹치는 부분만 적분하여 구하는 것은 Cross-correlation이라고 부른다.
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/ConvolutionvsCroesscorrelation.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/ConvolutionvsCroesscorrelation.png"></img>
 </center>
 
 - 이와 같은 개념이 CNN연산 방식에도 적용되어 있다. 엄밀히 CNN에서 필터는 reverse 되어있지 않은 Cross-correlation이 filter라고 보면 되는 것이다. 그냥 편해서 이름만 CNN이라고 부른다고 한다.
 Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부터 feature extraction을 하기 위함이다.
 <center>
-<img width="50%" height="50%" src="/MeanOfSparse_img_folder/CNN_descript.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/CNN_descript.png"></img>
 </center>
 
 - 일반적인 CNN에서 필터를 적용시키면(패딩 이런거 안쓰고), 필터의 행렬곱에 의해 더 적어진 피쳐맵이 뽑힌 행렬의 결과가 나오게 된다.
@@ -88,7 +88,7 @@ Convolution의 주목적은 어쨌든 filter를 적용시켜서 입력으로부�
 그런데 여기서 여러가지 시도들이 등장하는데 단순한 2x2의 임베딩된 입력 값인데 이 입력값들 사이에 1의 제로 패딩을 추가하면 다음과 같이 되고 크기의 결과는 5x5로 변하게 된다.
 
 <center>
-<img width="50%" height="50%" src=".MeanOfSparse_img_folder/1padinput_deconvolution.png"></img>
+<img width="50%" height="50%" src="./MeanOfSparse_img_folder/1padinput_deconvolution.png"></img>
 </center>
 
 자 그러면 다시 입력 이미지로부터, 첫 질문에 대한 답인 왜 Sparse한지에 대한 결론을 내릴 때가 왔다.
