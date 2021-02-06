@@ -5,7 +5,6 @@
 - Tags: NLP, transformer
 - Thesis: Transformer has a big potential.
 - 리뷰여부: Yes
-
 - Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Proceedings of the 31st International Conference on Neural Information Processing Systems (NIPS'17). Curran Associates Inc., Red Hook, NY, USA, 6000–6010.
 
 ## Abstract
