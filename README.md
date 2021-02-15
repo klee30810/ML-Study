@@ -8,6 +8,6 @@
 |[Transformer Attention is all you need](https://github.com/klee30810/ML-Study/blob/main/DL/Transformer%20Attention%20is%20All%20You%20Need.md)|NLP, Transformer, Attention|Transformer has a big potential without recurrence & convolution|
 |[Transformer Revisited](https://github.com/klee30810/ML-Study/blob/main/DL/Transformer%20Revisited.md)|Transformer, Attention|Transformer is investigated with python source code|
 |[Mixture Density networks](https://github.com/klee30810/ML-Study/blob/main/DL/Mixture%20Of%20Density%20Model/Mixture%20Of%20Density%20Model.md)|MDN, Mixture of Density networks , Inverse Problem |Mixture Of Density networks can solve the inverse problem with python source code|
-|[CutMix](https://github.com/klee30810/ML-Study/blob/main/DL/Mixture%20Of%20Density%20Model/Mixture%20Of%20Density%20Model.md)|Regulization, Data augmentation |CutMix has good performance in generalization of model and efficient preprocessing method with python source code & kaggle kernel|
+|[CutMix](https://github.com/klee30810/ML-Study/blob/main/DL/CutMix/CutMix.md)|Regulization, Data augmentation |CutMix has good performance in generalization of model and efficient preprocessing method with python source code & kaggle kernel|
 
 
