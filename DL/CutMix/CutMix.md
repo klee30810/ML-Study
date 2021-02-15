@@ -57,7 +57,7 @@
 ------
 ###Code 
 - 지금까지 내용을 코드로 작성 해보고 그 입력과 결과를 확인 해보겠다.
-  전체 파일과 코드는 <a href="https://github.com/Malgus1995/Today-i-Learned/tree/master/CutMix">여기</a>를 참조하길 바란다.
+  전체 파일과 코드는 <a href='https://github.com/Malgus1995/Today-i-Learned/tree/master/CutMix'>여기</a>를 참조하길 바란다.
      
   
 
